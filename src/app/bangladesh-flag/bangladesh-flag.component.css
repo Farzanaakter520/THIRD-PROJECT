@@ -1,0 +1,26 @@
+.flag-container {
+    width: 500px; /* Set width */
+    height: 300px; /* Set height */
+    background-color: green; /* Set the background color to green */
+    position: relative; /* To position the red circle */
+    border-radius: 10px; /* Optional: Add rounded corners to the flag */
+  }
+  
+  .green-field {
+    width: 100%;
+    height: 100%;
+    background-color: green; /* Green field of the flag */
+    position: relative;
+  }
+  
+  .red-circle {
+    width: 160px; /* Width of the red circle */
+    height: 160px; /* Height of the red circle */
+    background-color: red; /* Set the color to red */
+    border-radius: 50%; /* Make it a circle */
+    position: absolute;
+    top: 50%;
+    left: 35%; /* Adjust this to place the circle towards the left */
+    transform: translateY(-50%); /* Center the circle vertically */
+  }
+  

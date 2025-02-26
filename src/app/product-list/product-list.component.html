@@ -16,8 +16,8 @@
                 </tr>
             </thead>
             <tbody>
-              @for (product of products; track product.id){
-                <tr>
+               @for (product of products; track product.id){
+                <tr >
                     <td>{{products.indexOf (product) + 1}}</td>
                     <td>{{product.name}}</td>
                     <td>{{product.price}}</td>
@@ -33,7 +33,7 @@
                     </td>
                 </tr>
     
-              } 
+               } 
                    
             </tbody>
         </table>

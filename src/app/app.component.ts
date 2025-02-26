@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./navbar/navbar.component";
+import { BangladeshFlagComponent } from "./bangladesh-flag/bangladesh-flag.component";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent],
+  imports: [RouterOutlet, NavbarComponent, BangladeshFlagComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -13,7 +14,7 @@ export class AppComponent {
   title = 'product';
 }
 export class Product {
-  id: number;
+  id: String;
   name: string;
   price: number;
   quantity: number;
@@ -23,7 +24,7 @@ export class Product {
   sell_to: string;
 
 
-  constructor(id: number, name: string, price: number, quantity: number, purchase_date: Date, sell_date: Date, buy_from: string, sell_to: string) {
+  constructor(id: string, name: string, price: number, quantity: number, purchase_date: Date, sell_date: Date, buy_from: string, sell_to: string) {
     this.id = id;
     this.name = name;
     this.price = price;
