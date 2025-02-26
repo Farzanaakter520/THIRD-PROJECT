@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 class="text-center">Harry Potter</h1>
+    
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>ID</th>
+                    <th>Spell Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                    @for (spell of spells; track spell){
+                        <tr>
+                            <td>{{spells.indexOf (spell) + 1}}</td>
+                            <td>{{spell.id}}</td>
+                            <td>{{spell.name}}</td>
+                            <td>{{spell.description}}</td>
+                        </tr>
+                    }
+                </tbody>

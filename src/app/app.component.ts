@@ -6,7 +6,7 @@ import { BangladeshFlagComponent } from "./bangladesh-flag/bangladesh-flag.compo
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, BangladeshFlagComponent],
+  imports: [RouterOutlet, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
