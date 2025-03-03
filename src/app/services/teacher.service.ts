@@ -7,7 +7,7 @@ import { Teacher } from '../model/teacher.model';
   providedIn: 'root'
 })
 export class TeacherService {
-  private apiUrl = 'http://192.168.0.219:8080/teachers';
+  private apiUrl = 'http://localhost:8081/teachers';
 
   constructor(private http: HttpClient) { }
 

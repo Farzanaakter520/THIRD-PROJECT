@@ -5,6 +5,7 @@ import { BangladeshFlagComponent } from './bangladesh-flag/bangladesh-flag.compo
 import { NgsComponent } from './ngs/ngs.component';
 import { HarryPotterComponent } from './harry-potter/harry-potter.component';
 import { TeacherComponent } from './teacher/teacher.component';
+import { AddressComponent } from './address/address.component';
 
 export const routes: Routes = [
     {path: '', component: ProductInformationComponent},
@@ -14,5 +15,6 @@ export const routes: Routes = [
     {path:'ngs', component: NgsComponent},
     {path:'harry-potter', component: HarryPotterComponent},
     {path:'teacher', component: TeacherComponent},
+    {path:'address', component: AddressComponent},
     {path:'**', redirectTo: ''},
 ];

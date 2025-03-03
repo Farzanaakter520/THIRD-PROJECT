@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class HarryPotterService {
   apiUrl = 'https://hp-api.onrender.com/api/spells';
+  //private apiUrl = 'http://localhost:8081/spells';
 
   constructor(private http: HttpClient) { }
 
